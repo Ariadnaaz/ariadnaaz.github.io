@@ -172,20 +172,8 @@ main.cv {
   margin: 0;
 }
 
-.download-btn {
+.cv-header .btn {
   flex-shrink: 0;
-  display: inline-block;
-  background: var(--nav-bg);
-  color: var(--nav-fg);
-  text-decoration: none;
-  padding: 0.6rem 1.1rem;
-  border-radius: 4px;
-  font-weight: bold;
-  white-space: nowrap;
-}
-
-.download-btn:hover {
-  filter: brightness(0.92);
 }
 
 .cv section {
@@ -193,9 +181,10 @@ main.cv {
 }
 
 .cv h2 {
+  color: var(--nav-bg);
   border-bottom: 2px solid var(--nav-bg);
   padding-bottom: 0.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .cv h3 {
@@ -241,10 +230,73 @@ main.cv {
   margin-bottom: 0.7rem;
 }
 
+/* CV timeline (Education, Professional Experience) */
+.cv-tl-track {
+  position: relative;
+  margin-left: 7.5rem;
+  padding-left: 1.75rem;
+  border-left: 2px solid var(--nav-bg);
+}
+
+.cv-tl-track .cv-entry {
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+
+.cv-tl-track .cv-entry:last-child {
+  margin-bottom: 0;
+}
+
+.cv-tl-track .cv-entry::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.75rem - 1px);
+  top: 0.5rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--nav-bg);
+  border: 2px solid var(--bg);
+  transform: translateX(-50%);
+}
+
+.cv-tl-track .cv-entry-head {
+  display: block;
+}
+
+.cv-tl-track .cv-role {
+  color: var(--nav-bg);
+}
+
+.cv-tl-track .cv-date {
+  position: absolute;
+  left: calc(-1.75rem - 7.5rem);
+  top: 0.2rem;
+  width: 7rem;
+  text-align: right;
+  white-space: normal;
+}
+
 @media (max-width: 40rem) {
   .cv-entry-head {
     flex-direction: column;
     gap: 0;
+  }
+
+  .cv-tl-track {
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  .cv-tl-track .cv-date {
+    position: static;
+    width: auto;
+    text-align: left;
+    display: block;
+  }
+
+  .cv-tl-track .cv-entry::before {
+    display: none;
   }
 }
 
