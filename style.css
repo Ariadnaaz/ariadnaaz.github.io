@@ -339,6 +339,11 @@ main.cv {
   text-align: right;
 }
 
+.cv-tl-confs .cv-tl-track .cv-date {
+  font-weight: bold;
+  color: var(--text);
+}
+
 @media (max-width: 40rem) {
   .cv-entry-head {
     flex-direction: column;
