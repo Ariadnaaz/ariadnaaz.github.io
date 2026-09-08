@@ -126,23 +126,13 @@ main.cv {
 .cv-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 .cv-header h1 {
-  margin: 0 0 0.25rem;
-}
-
-.cv-subtitle {
-  margin: 0.25rem 0;
-  font-weight: bold;
-}
-
-.cv-contact {
-  margin: 0.25rem 0;
-  color: var(--muted);
+  margin: 0;
 }
 
 .download-btn {
