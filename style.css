@@ -445,14 +445,17 @@ main.pubs {
 }
 
 .pub {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
   background: transparent;
   border: 2px solid var(--nav-bg);
   border-radius: 10px;
   padding: 1.4rem;
   margin-bottom: 1.5rem;
+}
+
+.pub-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .pub-main {
@@ -504,7 +507,7 @@ main.pubs {
   margin-top: 0.9rem;
 }
 
-.pub-actions:has(.pub-abstract[open]) + .pub-abstract-body {
+.pub-row:has(.pub-abstract[open]) + .pub-abstract-body {
   display: block;
 }
 
@@ -516,7 +519,6 @@ main.pubs {
 .pub-fig-link {
   width: 240px;
   flex-shrink: 0;
-  align-self: flex-start;
   display: block;
   background: #fff;
   padding: 0.6rem;
@@ -556,8 +558,9 @@ main.pubs {
 }
 
 @media (max-width: 40rem) {
-  .pub {
+  .pub-row {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .pub-fig-link {
