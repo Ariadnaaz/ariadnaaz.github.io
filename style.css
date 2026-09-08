@@ -315,15 +315,18 @@ main.pubs {
 .pub-fig-link {
   width: 240px;
   flex-shrink: 0;
+  align-self: center;
   display: block;
+  background: #fff;
+  padding: 0.6rem;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
 }
 
 .pub-fig {
   display: block;
   width: 100%;
-  background: #fff;
-  border: 1px solid var(--card-border);
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .btn {
