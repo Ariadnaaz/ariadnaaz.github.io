@@ -22,6 +22,13 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 nav {
@@ -67,12 +74,12 @@ a {
 }
 
 footer {
-  max-width: var(--column-width);
-  margin: 0 auto;
-  padding: 2rem 1.5rem 3rem;
+  flex-shrink: 0;
+  padding: 1.5rem;
   border-top: 1px solid var(--rule);
   color: var(--muted);
   font-size: 0.85rem;
+  text-align: center;
 }
 
 .intro {
