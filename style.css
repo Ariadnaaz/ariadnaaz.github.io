@@ -6,7 +6,10 @@
   --link: #5a6038;
   --font-body: Arial, Helvetica, sans-serif;
   --column-width: 42rem;
+  --cv-width: 50rem;
   --nav-pad-x: 2rem;
+  --muted: #666666;
+  --rule: #dddddd;
 }
 
 * {
@@ -87,5 +90,108 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+
+/* CV page */
+main.cv {
+  max-width: var(--cv-width);
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cv-header h1 {
+  margin: 0 0 0.25rem;
+}
+
+.cv-subtitle {
+  margin: 0.25rem 0;
+  font-weight: bold;
+}
+
+.cv-contact {
+  margin: 0.25rem 0;
+  color: var(--muted);
+}
+
+.download-btn {
+  flex-shrink: 0;
+  display: inline-block;
+  background: var(--nav-bg);
+  color: var(--nav-fg);
+  text-decoration: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.download-btn:hover {
+  filter: brightness(0.92);
+}
+
+.cv section {
+  margin-top: 2.5rem;
+}
+
+.cv h2 {
+  border-bottom: 2px solid var(--nav-bg);
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.cv h3 {
+  margin: 1.25rem 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.cv-entry {
+  margin-bottom: 1.25rem;
+}
+
+.cv-entry-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cv-role {
+  font-weight: bold;
+}
+
+.cv-date {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.cv-place {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.cv-entry ul,
+.cv-pubs {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.cv-pubs li {
+  margin-bottom: 0.7rem;
+}
+
+@media (max-width: 40rem) {
+  .cv-entry-head {
+    flex-direction: column;
+    gap: 0;
   }
 }
