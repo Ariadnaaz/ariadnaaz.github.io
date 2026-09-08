@@ -511,6 +511,13 @@ main.cv {
     text-align: left;
   }
 
+  /* Honors, Presentations and Teaching: shorter dates, so sit them
+     further from the rail. */
+  .cv-tl:not(.cv-tl-ranges) .cv-tl-track .cv-date {
+    width: 4.2rem;
+    right: calc(100% + 2.3rem);
+  }
+
   .cv-tl-track .cv-entry::before {
     left: calc(-1.1rem - 1px);
   }
