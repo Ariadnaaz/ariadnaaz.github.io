@@ -305,9 +305,16 @@ main.pubs {
   font-size: 0.95rem;
 }
 
-.pub-fig {
+.pub-fig-link {
   width: 240px;
   flex-shrink: 0;
+  display: block;
+}
+
+.pub-fig {
+  display: block;
+  width: 100%;
+  background: #fff;
   border: 1px solid var(--card-border);
   border-radius: 6px;
 }
@@ -341,7 +348,7 @@ main.pubs {
     flex-direction: column;
   }
 
-  .pub-fig {
+  .pub-fig-link {
     width: 100%;
     order: -1;
   }
