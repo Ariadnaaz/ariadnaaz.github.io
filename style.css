@@ -246,6 +246,25 @@ main.cv {
   font-size: 0.85rem;
 }
 
+.cv-langs li {
+  padding: 0;
+  background: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.cv-langs .lang {
+  background: var(--nav-bg);
+  color: #fff;
+  padding: 0.05rem 0.7rem;
+}
+
+.cv-langs .level {
+  background: var(--card-bg);
+  color: var(--text);
+  padding: 0.05rem 0.7rem;
+}
+
 /* CV timeline (Education, Professional Experience, Teaching, Presentations) */
 .cv-tl-track {
   position: relative;
