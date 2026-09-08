@@ -121,23 +121,23 @@ nav ul a[aria-current="page"] {
 }
 
 @media (max-width: 40rem) {
-  /* Top row becomes a 3-column grid so the brand sits centered
-     between an empty column and the toggle button. */
+  /* Top row: brand fills the space left of the toggle button and is
+     centered within it. */
   nav {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto;
     align-items: center;
   }
 
   nav .brand {
-    grid-column: 2;
+    grid-column: 1;
     margin: 0;
     text-align: center;
   }
 
   .nav-toggle-btn {
     display: flex;
-    grid-column: 3;
+    grid-column: 2;
     justify-self: end;
   }
 
