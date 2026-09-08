@@ -187,11 +187,9 @@ main.cv {
 }
 
 .cv h3 {
-  margin: 1.25rem 0 0.5rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+  margin: 1.5rem 0 0.85rem;
+  font-size: 1rem;
+  color: var(--text);
 }
 
 .cv-entry {
