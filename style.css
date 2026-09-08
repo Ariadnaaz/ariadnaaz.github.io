@@ -1,16 +1,27 @@
 :root {
-  --nav-bg: #777E49;
+  /* palette — coolors.co/777e49-5b3000-f6e7cb-8e6c88-37123c */
+  --olive: #777e49;
+  --brown: #5b3000;
+  --cream: #f6e7cb;
+  --mauve: #8e6c88;
+  --plum:  #37123c;
+
+  --nav-bg: var(--olive);
   --nav-fg: #ffffff;
-  --text: #222222;
-  --bg: #ffffff;
-  --link: #5a6038;
+  --text: var(--plum);
+  --bg: var(--cream);
+  --surface: #fffaf0;
+  --link: var(--brown);
+  --link-hover: var(--mauve);
+  --accent: var(--mauve);
+  --muted: #7c6a58;
+  --rule: #e4d2b2;
+
   --font-body: Arial, Helvetica, sans-serif;
   --column-width: 42rem;
   --home-width: 58rem;
   --cv-width: 50rem;
   --nav-pad-x: 2rem;
-  --muted: #666666;
-  --rule: #dddddd;
 }
 
 * {
@@ -32,9 +43,20 @@ main {
   flex: 1 0 auto;
 }
 
+h1, h2, h3 {
+  color: var(--plum);
+  line-height: 1.25;
+}
+
+::selection {
+  background: var(--mauve);
+  color: var(--cream);
+}
+
 nav {
   background: var(--nav-bg);
   padding: 1.15rem var(--nav-pad-x);
+  border-bottom: 3px solid var(--brown);
 }
 
 nav ul {
@@ -62,6 +84,8 @@ nav a:hover {
 
 nav a[aria-current="page"] {
   text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
 }
 
 main {
@@ -72,6 +96,10 @@ main {
 
 a {
   color: var(--link);
+}
+
+main a:hover {
+  color: var(--link-hover);
 }
 
 footer {
@@ -95,6 +123,8 @@ footer {
   border-radius: 4px;
   margin-left: -2.5rem;
   margin-top: 2rem;
+  border: 4px solid var(--surface);
+  box-shadow: 0 6px 20px rgba(55, 18, 60, 0.18);
 }
 
 .intro-text {
@@ -138,8 +168,8 @@ main.cv {
 .download-btn {
   flex-shrink: 0;
   display: inline-block;
-  background: var(--nav-bg);
-  color: var(--nav-fg);
+  background: var(--plum);
+  color: var(--cream);
   text-decoration: none;
   padding: 0.6rem 1.1rem;
   border-radius: 4px;
@@ -148,7 +178,8 @@ main.cv {
 }
 
 .download-btn:hover {
-  filter: brightness(0.92);
+  background: var(--mauve);
+  color: var(--cream);
 }
 
 .cv section {
@@ -156,14 +187,14 @@ main.cv {
 }
 
 .cv h2 {
-  border-bottom: 2px solid var(--nav-bg);
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 0.2rem;
   margin-bottom: 1rem;
 }
 
 .cv h3 {
   margin: 1.25rem 0 0.5rem;
-  color: var(--muted);
+  color: var(--brown);
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
