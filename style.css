@@ -249,7 +249,7 @@ main.pubs {
 .pub {
   display: flex;
   gap: 1.5rem;
-  align-items: flex-start;
+  align-items: center;
   background: transparent;
   border: 2px solid var(--nav-bg);
   border-radius: 10px;
@@ -268,11 +268,13 @@ main.pubs {
 }
 
 .pub-authors {
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.15rem;
 }
 
 .pub-venue {
+  margin: 0 0 0.9rem;
   font-style: italic;
+  color: var(--muted);
 }
 
 .pub-actions {
