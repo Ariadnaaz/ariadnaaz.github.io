@@ -236,11 +236,20 @@ main.pubs {
   max-width: var(--pubs-width);
 }
 
+.pubs h1 {
+  margin-bottom: 0.75rem;
+}
+
 .pubs section {
   margin-top: 2.5rem;
 }
 
+.pubs section:first-of-type {
+  margin-top: 0;
+}
+
 .pubs h2 {
+  color: var(--nav-bg);
   border-bottom: 2px solid var(--nav-bg);
   padding-bottom: 0.2rem;
   margin-bottom: 1.25rem;
