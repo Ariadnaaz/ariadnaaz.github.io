@@ -12,6 +12,7 @@
   --rule: #dddddd;
   --card-bg: #f6ecda;
   --card-border: #e6d9bd;
+  --btn-active: #5B3000;
 }
 
 * {
@@ -142,6 +143,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   margin-top: 1rem;
 }
@@ -539,13 +541,14 @@ main.pubs {
   white-space: nowrap;
 }
 
-.btn:hover {
-  background: var(--nav-bg);
+.btn:hover,
+.btn:active {
+  background: var(--btn-active);
   color: #fff;
 }
 
 .pub-abstract[open] summary.btn {
-  background: var(--nav-bg);
+  background: var(--btn-active);
   color: #fff;
 }
 
