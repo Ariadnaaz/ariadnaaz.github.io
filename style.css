@@ -493,17 +493,22 @@ main.cv {
   /* Keep the desktop timeline on mobile: line, dots and a left-hand date
      column. Just narrow that column and let the dates wrap so they fit. */
   .cv-tl-track {
-    margin-left: 6.25rem;
+    margin-left: 5.75rem;
     padding-left: 1.1rem;
   }
 
   .cv-tl-track .cv-date {
-    right: calc(100% + 2rem);
+    right: calc(100% + 1.5rem);
     width: 4.8rem;
     font-size: 0.85rem;
-    text-align: left;
     white-space: normal;
     hyphens: none;
+  }
+
+  /* Month-year ranges wrap onto two lines, so left-align them; the
+     shorter single-token dates elsewhere stay right-aligned to the rail. */
+  .cv-tl-ranges .cv-tl-track .cv-date {
+    text-align: left;
   }
 
   .cv-tl-track .cv-entry::before {
