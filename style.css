@@ -225,6 +225,10 @@ main.cv {
   padding-left: 1.2rem;
 }
 
+.cv-entry > p {
+  margin: 0.3rem 0 0;
+}
+
 .cv-pubs li {
   margin-bottom: 0.7rem;
 }
