@@ -192,6 +192,22 @@ main.cv {
   color: var(--text);
 }
 
+.cv-h3-note {
+  font-weight: normal;
+}
+
+.cv-tl-year {
+  margin: 1.25rem 0 0.6rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--muted);
+}
+
+.cv-tl-track .cv-role-pos {
+  font-weight: normal;
+  color: var(--text);
+}
+
 .cv-entry {
   margin-bottom: 1.25rem;
 }
