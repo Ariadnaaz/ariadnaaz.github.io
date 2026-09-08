@@ -232,7 +232,7 @@ main.cv {
 /* CV timeline (Education, Professional Experience, Teaching, Presentations) */
 .cv-tl-track {
   position: relative;
-  margin-left: 10.5rem;
+  margin-left: 12rem;
   padding-left: 1.75rem;
   border-left: 2px solid var(--nav-bg);
 }
@@ -269,7 +269,7 @@ main.cv {
 
 .cv-tl-track .cv-date {
   position: absolute;
-  right: calc(100% + 1.75rem);
+  right: calc(100% + 3rem);
   top: 0.2rem;
   white-space: nowrap;
   text-align: right;
