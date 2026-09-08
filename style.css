@@ -6,6 +6,7 @@
   --link: #5a6038;
   --font-body: Arial, Helvetica, sans-serif;
   --column-width: 42rem;
+  --nav-pad-x: 1rem;
 }
 
 * {
@@ -22,7 +23,7 @@ body {
 
 nav {
   background: var(--nav-bg);
-  padding: 1.15rem 1.5rem;
+  padding: 1.15rem var(--nav-pad-x);
 }
 
 nav ul {
