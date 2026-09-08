@@ -490,20 +490,34 @@ main.cv {
     gap: 0;
   }
 
+  /* Keep the timeline on mobile: the vertical line and the dots stay,
+     but the date moves onto the track as the first line of each entry
+     instead of sitting in a wide left-hand gutter there is no room for. */
   .cv-tl-track {
     margin-left: 0;
-    padding-left: 1rem;
+    padding-left: 1.4rem;
+  }
+
+  .cv-tl-track .cv-entry-head {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 
   .cv-tl-track .cv-date {
     position: static;
+    order: -1;
     width: auto;
     text-align: left;
     display: block;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 0.15rem;
   }
 
   .cv-tl-track .cv-entry::before {
-    display: none;
+    left: calc(-1.4rem - 1px);
+    top: 0.55rem;
   }
 
   .cv-ay-label {
@@ -512,7 +526,8 @@ main.cv {
     width: auto;
     text-align: left;
     display: block;
-    margin-bottom: 0.35rem;
+    color: var(--text);
+    margin-bottom: 0.5rem;
   }
 }
 
