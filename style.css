@@ -165,6 +165,7 @@ main.cv {
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  margin-top: 1.4rem;
 }
 
 .cv-header h1 {
@@ -206,7 +207,7 @@ main.cv {
 }
 
 .cv-ay .cv-entry {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .cv-ay .cv-entry:last-child {
@@ -394,7 +395,7 @@ main.pubs {
 }
 
 .pubs h1 {
-  margin-bottom: 0.75rem;
+  margin: 1.4rem 0 0.75rem;
 }
 
 .pubs section {
