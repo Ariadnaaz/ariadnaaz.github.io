@@ -196,8 +196,18 @@ main.cv {
   font-weight: normal;
 }
 
-.cv-tl-year {
-  margin: 1.25rem 0 0.6rem;
+.cv-ay {
+  position: relative;
+  margin-top: 1.25rem;
+}
+
+.cv-ay-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6.5rem;
+  text-align: right;
   font-size: 0.9rem;
   font-weight: bold;
   color: var(--muted);
@@ -286,7 +296,7 @@ main.cv {
 /* CV timeline (Education, Professional Experience, Teaching, Presentations) */
 .cv-tl-track {
   position: relative;
-  margin-left: 12rem;
+  margin-left: 13rem;
   padding-left: 1.75rem;
   border-left: 2px solid var(--nav-bg);
 }
@@ -349,6 +359,15 @@ main.cv {
 
   .cv-tl-track .cv-entry::before {
     display: none;
+  }
+
+  .cv-ay-label {
+    position: static;
+    transform: none;
+    width: auto;
+    text-align: left;
+    display: block;
+    margin-bottom: 0.35rem;
   }
 }
 
