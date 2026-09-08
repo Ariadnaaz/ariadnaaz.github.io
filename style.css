@@ -101,12 +101,12 @@ nav ul a[aria-current="page"] {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0.55rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.5rem;
   cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-radius: 4px;
 }
 
 .nav-toggle-btn span {
@@ -127,6 +127,8 @@ nav ul a[aria-current="page"] {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   nav .brand {
@@ -139,6 +141,7 @@ nav ul a[aria-current="page"] {
     display: flex;
     grid-column: 2;
     justify-self: end;
+    margin-right: -0.25rem;
   }
 
   nav ul {
