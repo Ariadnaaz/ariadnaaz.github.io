@@ -70,13 +70,16 @@ a {
 }
 
 .intro-pic {
-  width: 220px;
+  width: 280px;
   flex-shrink: 0;
   border-radius: 4px;
+  margin-left: -2.5rem;
+  margin-top: 2rem;
 }
 
 .intro-text h1 {
   margin-top: 0;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 40rem) {
