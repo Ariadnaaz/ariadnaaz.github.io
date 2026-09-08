@@ -610,6 +610,7 @@ main.pubs {
 .pub-abstract-body p {
   margin: 0;
   font-size: 0.95rem;
+  color: var(--muted);
 }
 
 .pub-fig-link {
