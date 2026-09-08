@@ -1,0 +1,64 @@
+:root {
+  --nav-bg: #777E49;
+  --nav-fg: #ffffff;
+  --text: #222222;
+  --bg: #ffffff;
+  --link: #5a6038;
+  --font-body: Georgia, "Times New Roman", serif;
+  --column-width: 42rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+nav {
+  background: var(--nav-bg);
+  padding: 0.75rem 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: var(--column-width);
+  display: flex;
+  gap: 1.5rem;
+  align-items: baseline;
+}
+
+nav .brand {
+  font-weight: bold;
+  margin-right: auto;
+}
+
+nav a {
+  color: var(--nav-fg);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+main {
+  max-width: var(--column-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+a {
+  color: var(--link);
+}
