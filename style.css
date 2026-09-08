@@ -7,7 +7,6 @@
   --font-body: Arial, Helvetica, sans-serif;
   --column-width: 42rem;
   --home-width: 58rem;
-  --cv-width: 50rem;
   --nav-pad-x: 2rem;
   --muted: #666666;
   --rule: #dddddd;
@@ -157,7 +156,7 @@ main.home {
 
 /* CV page */
 main.cv {
-  max-width: var(--cv-width);
+  max-width: var(--home-width);
 }
 
 .cv-header {
@@ -230,17 +229,17 @@ main.cv {
   margin-bottom: 0.7rem;
 }
 
-/* CV timeline (Education, Professional Experience) */
+/* CV timeline (Education, Professional Experience, Teaching, Presentations) */
 .cv-tl-track {
   position: relative;
-  margin-left: 7.5rem;
+  margin-left: 10.5rem;
   padding-left: 1.75rem;
   border-left: 2px solid var(--nav-bg);
 }
 
 .cv-tl-track .cv-entry {
   position: relative;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.4rem;
 }
 
 .cv-tl-track .cv-entry:last-child {
@@ -270,11 +269,10 @@ main.cv {
 
 .cv-tl-track .cv-date {
   position: absolute;
-  left: calc(-1.75rem - 7.5rem);
+  right: calc(100% + 1.75rem);
   top: 0.2rem;
-  width: 7rem;
+  white-space: nowrap;
   text-align: right;
-  white-space: normal;
 }
 
 @media (max-width: 40rem) {
