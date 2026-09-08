@@ -8,9 +8,12 @@
   --column-width: 42rem;
   --home-width: 58rem;
   --cv-width: 50rem;
+  --pubs-width: 54rem;
   --nav-pad-x: 2rem;
   --muted: #666666;
   --rule: #dddddd;
+  --card-bg: #f6ecda;
+  --card-border: #e6d9bd;
 }
 
 * {
@@ -225,5 +228,121 @@ main.cv {
   .cv-entry-head {
     flex-direction: column;
     gap: 0;
+  }
+}
+
+/* Publications page */
+main.pubs {
+  max-width: var(--pubs-width);
+}
+
+.pubs section {
+  margin-top: 2.5rem;
+}
+
+.pubs h2 {
+  border-bottom: 2px solid var(--nav-bg);
+  padding-bottom: 0.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.pub {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.pub-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.pub-authors {
+  margin: 0 0 0.9rem;
+}
+
+.pub-venue {
+  font-style: italic;
+}
+
+.pub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.pub-abstract {
+  display: contents;
+}
+
+.pub-abstract summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.pub-abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.pub-abstract-body {
+  flex-basis: 100%;
+  margin-top: 0.75rem;
+}
+
+.pub-abstract-body p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.pub-fig {
+  width: 240px;
+  flex-shrink: 0;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--nav-bg);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: var(--nav-bg);
+  color: #fff;
+}
+
+.pub-abstract[open] summary.btn {
+  background: var(--nav-bg);
+  color: #fff;
+}
+
+@media (max-width: 40rem) {
+  .pub {
+    flex-direction: column;
+  }
+
+  .pub-fig {
+    width: 100%;
+    order: -1;
   }
 }

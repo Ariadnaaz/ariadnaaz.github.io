@@ -15,50 +15,150 @@
       <li><a href="cv.html">CV</a></li>
     </ul>
   </nav>
-  <main class="cv">
+  <main class="pubs">
     <h1>Publications</h1>
 
     <section>
-      <h3>Published or Accepted</h3>
-      <ul class="cv-pubs">
-        <li>
-          <strong>Albors Zumel, A.</strong>, Tizzoni, M. &amp; Campedelli, G. M.
-          (2025). Deep Learning for Crime Forecasting: The Role of Mobility at
-          Fine-grained Spatiotemporal Scales.
-          <em>Journal of Quantitative Criminology</em>.
-          <a href="https://doi.org/10.1007/s10940-025-09629-3">https://doi.org/10.1007/s10940-025-09629-3</a>
-        </li>
-        <li>
-          Campedelli, G. M., Jelveh, Z., Chalfin, A., Semenza, D., Piza, E.,
-          <strong>Albors Zumel, A.</strong>, Lepri, B. &amp; Sharkey, P. (2026).
-          Computational approaches and the future of urban crime research.
-          <em>Nature</em>, 655, 315–326.
-          <a href="https://doi.org/10.1038/s41586-026-10622-4">https://doi.org/10.1038/s41586-026-10622-4</a>
-        </li>
-      </ul>
+      <h2>Published or Accepted</h2>
+
+      <article class="pub">
+        <div class="pub-main">
+          <h3 class="pub-title">
+            Deep Learning for Crime Forecasting: The Role of Mobility at
+            Fine-grained Spatiotemporal Scales
+          </h3>
+          <p class="pub-authors">
+            <strong>Albors Zumel, A.</strong>, Tizzoni, M. &amp; Campedelli, G. M.
+            &nbsp;·&nbsp; <span class="pub-venue">Journal of Quantitative
+            Criminology</span>, 2025
+          </p>
+          <div class="pub-actions">
+            <details class="pub-abstract">
+              <summary class="btn">Abstract</summary>
+              <div class="pub-abstract-body">
+                <p>
+                  To develop a deep learning framework to evaluate if and how
+                  incorporating micro-level mobility features, alongside
+                  historical crime and sociodemographic data, enhances predictive
+                  performance in crime forecasting at fine-grained spatial and
+                  temporal resolutions. We advance the literature on
+                  computational methods and crime forecasting by focusing on four
+                  U.S. cities (i.e., Baltimore, Chicago, Los Angeles, and
+                  Philadelphia). We employ crime incident data obtained from each
+                  city&rsquo;s police department, combined with sociodemographic
+                  data from the American Community Survey and human mobility data
+                  from Advan, collected from 2019 to 2023. This data is
+                  aggregated into grids with equally sized cells of 0.077 sq.
+                  miles (0.2 sq. kms) and used to train our deep learning
+                  forecasting model, a Convolutional Long Short-Term Memory
+                  (ConvLSTM) network, which predicts crime occurrences 12 hours
+                  ahead using 14-day and 2-day input sequences. We also compare
+                  its performance against three baseline models: logistic
+                  regression, random forest, and standard LSTM. Incorporating
+                  mobility features improves predictive performance, especially
+                  when using shorter input sequences. Noteworthy, however, the
+                  best results are obtained when both mobility and
+                  sociodemographic features are used together, with our deep
+                  learning model achieving the highest recall, precision, and F1
+                  score in all four cities, outperforming alternative methods.
+                  With this configuration, longer input sequences enhance
+                  predictions for violent crimes, while shorter sequences are
+                  more effective for property crimes. These findings underscore
+                  the importance of integrating diverse data sources for
+                  spatiotemporal crime forecasting, mobility included. They also
+                  highlight the advantages (and limits) of deep learning when
+                  dealing with fine-grained spatial and temporal scales.
+                </p>
+              </div>
+            </details>
+            <a class="btn" href="https://doi.org/10.1007/s10940-025-09629-3"
+               target="_blank" rel="noopener">DOI &#8599;</a>
+          </div>
+        </div>
+        <img class="pub-fig" src="assets/fig-forecasting.svg"
+             alt="Figure from the crime forecasting paper">
+      </article>
+
+      <article class="pub">
+        <div class="pub-main">
+          <h3 class="pub-title">
+            Computational approaches and the future of urban crime research
+          </h3>
+          <p class="pub-authors">
+            Campedelli, G. M., Jelveh, Z., Chalfin, A., Semenza, D., Piza, E.,
+            <strong>Albors Zumel, A.</strong>, Lepri, B. &amp; Sharkey, P.
+            &nbsp;·&nbsp; <span class="pub-venue">Nature</span>, 655, 315&ndash;326, 2026
+          </p>
+          <div class="pub-actions">
+            <details class="pub-abstract">
+              <summary class="btn">Abstract</summary>
+              <div class="pub-abstract-body">
+                <p><!-- TODO: paste the abstract here --></p>
+              </div>
+            </details>
+            <a class="btn" href="https://doi.org/10.1038/s41586-026-10622-4"
+               target="_blank" rel="noopener">DOI &#8599;</a>
+          </div>
+        </div>
+        <img class="pub-fig" src="assets/fig-nature.svg"
+             alt="Figure from the urban crime research paper">
+      </article>
     </section>
 
     <section>
-      <h3>Under Review</h3>
-      <ul class="cv-pubs">
-        <li>
-          <strong>Albors Zumel, A.</strong>, Tizzoni, M., Hernández, W. &amp;
-          Campedelli, G. M. Ambient Population and Crime: The Fragility of Causal
-          Links in Urban Environments. Under review at
-          <em>Justice Quarterly</em>.
-        </li>
-      </ul>
+      <h2>Under Review</h2>
+
+      <article class="pub">
+        <div class="pub-main">
+          <h3 class="pub-title">
+            Ambient Population and Crime: The Fragility of Causal Links in Urban
+            Environments
+          </h3>
+          <p class="pub-authors">
+            <strong>Albors Zumel, A.</strong>, Tizzoni, M., Hern&aacute;ndez, W.
+            &amp; Campedelli, G. M.
+            &nbsp;·&nbsp; <span class="pub-venue">Under review at Justice
+            Quarterly</span>
+          </p>
+          <div class="pub-actions">
+            <details class="pub-abstract">
+              <summary class="btn">Abstract</summary>
+              <div class="pub-abstract-body">
+                <p><!-- TODO: paste the abstract here --></p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <img class="pub-fig" src="assets/fig-ambient.svg"
+             alt="Figure from the ambient population and crime paper">
+      </article>
     </section>
 
     <section>
-      <h3>In Preparation</h3>
-      <ul class="cv-pubs">
-        <li>
-          <strong>Albors Zumel, A.</strong>, Tizzoni, M. &amp; Campedelli, G. M.
-          Unequal Suspicion: A Sequential Factorial Vignette Study of LLM Bias in
-          Threat Detection.
-        </li>
-      </ul>
+      <h2>In Preparation</h2>
+
+      <article class="pub">
+        <div class="pub-main">
+          <h3 class="pub-title">
+            Unequal Suspicion: A Sequential Factorial Vignette Study of LLM Bias
+            in Threat Detection
+          </h3>
+          <p class="pub-authors">
+            <strong>Albors Zumel, A.</strong>, Tizzoni, M. &amp; Campedelli, G. M.
+            &nbsp;·&nbsp; <span class="pub-venue">In preparation</span>
+          </p>
+          <div class="pub-actions">
+            <details class="pub-abstract">
+              <summary class="btn">Abstract</summary>
+              <div class="pub-abstract-body">
+                <p><!-- TODO: paste the abstract here --></p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <img class="pub-fig" src="assets/fig-llm.svg"
+             alt="Figure from the LLM bias in threat detection paper">
+      </article>
     </section>
   </main>
   <footer>
