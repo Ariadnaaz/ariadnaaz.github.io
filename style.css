@@ -493,14 +493,14 @@ main.cv {
   /* Keep the desktop timeline on mobile: line, dots and a left-hand date
      column. Just narrow that column and let the dates wrap so they fit. */
   .cv-tl-track {
-    margin-left: 5.75rem;
+    margin-left: 6.25rem;
     padding-left: 1.1rem;
   }
 
   .cv-tl-track .cv-date {
-    right: calc(100% + 1.5rem);
-    width: 4.8rem;
-    font-size: 0.85rem;
+    right: calc(100% + 1.3rem);
+    width: 5.5rem;
+    font-size: 0.9rem;
     white-space: normal;
     hyphens: none;
   }
@@ -511,11 +511,10 @@ main.cv {
     text-align: left;
   }
 
-  /* Honors, Presentations and Teaching: shorter dates, so sit them
-     further from the rail. */
+  /* Honors, Presentations and Teaching: shorter dates, narrower box. */
   .cv-tl:not(.cv-tl-ranges) .cv-tl-track .cv-date {
-    width: 4.2rem;
-    right: calc(100% + 2.3rem);
+    width: 4.5rem;
+    right: calc(100% + 1.7rem);
   }
 
   .cv-tl-track .cv-entry::before {
