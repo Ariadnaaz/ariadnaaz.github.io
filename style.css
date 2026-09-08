@@ -165,13 +165,28 @@ footer {
     text-align: center;
   }
 
+  /* Unwrap .intro-left so the photo and contact block become direct
+     flex items of .intro and can be reordered independently. */
   .intro-left {
-    width: 100%;
-    max-width: 280px;
-    margin-left: 0;
+    display: contents;
   }
 
+  .intro-pic {
+    order: 1;
+    width: 100%;
+    max-width: 280px;
+    margin-top: 0;
+  }
+
+  .intro-text {
+    order: 2;
+    margin-top: 0;
+  }
+
+  /* Contact drops to the very end of the page on mobile. */
   .intro-contact {
+    order: 3;
+    margin-top: 0;
     justify-content: center;
   }
 }
