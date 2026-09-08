@@ -8,7 +8,6 @@
   --column-width: 42rem;
   --home-width: 58rem;
   --cv-width: 50rem;
-  --pubs-width: 54rem;
   --nav-pad-x: 2rem;
   --muted: #666666;
   --rule: #dddddd;
@@ -233,7 +232,7 @@ main.cv {
 
 /* Publications page */
 main.pubs {
-  max-width: var(--pubs-width);
+  max-width: var(--home-width);
 }
 
 .pubs h1 {
