@@ -500,9 +500,12 @@ main.pubs {
 }
 
 .pub-abstract-body {
-  order: 1;
-  flex-basis: 100%;
-  margin-top: 0.75rem;
+  display: none;
+  margin-top: 0.9rem;
+}
+
+.pub-actions:has(.pub-abstract[open]) + .pub-abstract-body {
+  display: block;
 }
 
 .pub-abstract-body p {
@@ -513,7 +516,7 @@ main.pubs {
 .pub-fig-link {
   width: 240px;
   flex-shrink: 0;
-  align-self: center;
+  align-self: flex-start;
   display: block;
   background: #fff;
   padding: 0.6rem;
