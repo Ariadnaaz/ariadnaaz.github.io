@@ -262,6 +262,10 @@ main.pubs {
   min-width: 0;
 }
 
+.pub-main > :last-child {
+  margin-bottom: 0;
+}
+
 .pub-title {
   margin: 0 0 0.4rem;
   font-size: 1.1rem;
