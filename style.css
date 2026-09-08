@@ -613,6 +613,14 @@ main.pubs {
   color: var(--muted);
 }
 
+.pub-abstract-body p + p {
+  margin-top: 0.6rem;
+}
+
+.pub-abstract-body strong {
+  color: var(--text);
+}
+
 .pub-fig-link {
   width: 240px;
   flex-shrink: 0;
