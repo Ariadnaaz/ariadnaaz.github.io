@@ -6,6 +6,7 @@
   --link: #5a6038;
   --font-body: Arial, Helvetica, sans-serif;
   --column-width: 42rem;
+  --home-width: 58rem;
   --cv-width: 50rem;
   --nav-pad-x: 2rem;
   --muted: #666666;
@@ -107,6 +108,10 @@ footer {
     align-items: center;
     text-align: center;
   }
+}
+
+main.home {
+  max-width: var(--home-width);
 }
 
 /* CV page */
