@@ -124,12 +124,21 @@ footer {
   font-size: 1.4rem;
 }
 
+.intro-interests {
+  margin-top: 1.5rem;
+}
+
+.intro-interests-label {
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+
 .intro-contact {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .intro-contact-label {
