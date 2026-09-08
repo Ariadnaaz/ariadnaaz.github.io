@@ -493,14 +493,16 @@ main.cv {
   /* Keep the desktop timeline on mobile: line, dots and a left-hand date
      column. Just narrow that column and let the dates wrap so they fit. */
   .cv-tl-track {
-    margin-left: 5rem;
+    margin-left: 5.5rem;
     padding-left: 1.1rem;
   }
 
   .cv-tl-track .cv-date {
-    right: calc(100% + 0.9rem);
-    width: 4.4rem;
+    right: calc(100% + 1.4rem);
+    width: 4.6rem;
+    font-size: 0.8rem;
     white-space: normal;
+    hyphens: none;
   }
 
   .cv-tl-track .cv-entry::before {
